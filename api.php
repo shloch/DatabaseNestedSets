@@ -6,7 +6,7 @@ header('Content-Type: application/json');
 include_once './config/config.php';
 include_once './models/Model.php';
 include_once './config/errors.php';
-include_once './config/urlConfig.php';
+include_once './config/urlCheck.php';
 
 //collecting GET optional params
 $page_num = ($_GET['page_num'] == null) ? 0 : $_GET['page_num']; //optional
@@ -23,10 +23,10 @@ if($urlValidity['isValid'] == false) {
   $database = new Database();
   $db = $database->connect();
 
-  //instantiate  post object
+  //instantiate  data object
   $tree = new Model($db);
 
-  //Tree post query
+  //Tree data query
   $checkSearchname = $tree->checkIfNameExist($_GET['search']);
   if($num = $checkSearchname->rowCount() == 0) {
     echo json_encode(
@@ -34,37 +34,36 @@ if($urlValidity['isValid'] == false) {
     );
   } else {
     $result = $tree->getTreeFromNode($_GET['node_id'], $_GET['search'], $_GET['language']);
-    //get row count
     $num = $result->rowCount();
 
-
-    // check if any post
     if($num > 0) {
-      //post array
-       $response = array();
+      $response = array();
       $response['data'] = array();
-
       while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-          extract($row);
-          $tree_item = array(
+          extract($row);     
+          if($idNode != $_GET['node_id']) {       
+            $tree_item = array(
               'idNode' => $idNode,
-              'NodeName' => ($nodeName)
-          );
-
-          // push  to "data"
-          array_push($response['data'], $tree_item);
+              'NodeName' => $nodeName
+            );
+            array_push($response['data'], $tree_item);
+          }
       }
-      //turn it to JSON $ output
-      echo json_encode($response);
+      if(count($response['data']) == 0) {
+        echo json_encode(
+          array('error' => $erroObject->noChildUnder($_GET['search']) )
+        );
+      } else {
+        echo json_encode($response);
+      }
+      
     } else {
-      //no post
+      //no matching data
       echo json_encode(
           array('error' => $erroObject->invalideNode() )
       );
     }
   }
-  
-
 }
 
 

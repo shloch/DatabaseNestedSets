@@ -1,6 +1,6 @@
 # Database Nested sets
 
-Storing, Querying binary trees in a relational database and building a REST api from it
+Storing, Querying binary trees in a relational database and building a REST api from it.
 More about the exercise [here](https://github.com/shloch/DatabaseNestedSets/blob/main/Backend%20Developer%20Test%20-%20PHP%20NEW%2010_20.pdf)
 
 ## Visual sketch of data representation
@@ -19,7 +19,7 @@ More about the exercise [here](https://github.com/shloch/DatabaseNestedSets/blob
 
 - Execute the SQL queries inside `tables.sql` to setup the database and it's tables
 - Execute the SQL queries inside `data.sql` to insert data
-- clone this folder and put inside your hosting folder (`www`, `htdocs` etc..)
+- clone/download this project and put the folder inside your server hosting folder (`www`, `htdocs` etc..)
 - configure your database access inside the file  `config/config.php`
 - launch your Webserver and open the project via your favourite browser
 

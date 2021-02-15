@@ -1,8 +1,6 @@
 <?php 
 
-
 class Model {
-    //DB stuff
 
     private $connection;
     private $tree = 'node_tree';
@@ -17,13 +15,14 @@ class Model {
     //Get tree from specific node
     public function getTreeFromNode($nodeID, $search, $language='english') {
         //create query
-         $query = 'SELECT n.idNode, n.nodeName FROM node_tree_names n 
+         $query = 'SELECT n.idNode, n.nodeName, t.level AS parentLevel FROM node_tree_names n 
                    INNER JOIN node_tree t ON t.idNode = n.idNode 
                    WHERE (n.language = \'' .$language. '\') AND (n.idNode IN (SELECT node.idNode FROM node_tree AS node, node_tree AS parent 
                                                   INNER JOIN node_tree_names t ON t.idNode = parent.idNode 
                                                   WHERE (node.iLeft BETWEEN parent.iLeft AND parent.iRight) AND (parent.idNode = \''. $nodeID .'\') AND (t.language = \''.$language.'\') 
                                                   ORDER BY node.iLeft))';
         //prepare statements
+        //echo $query;
         $satement = $this->connection->prepare($query);
         $satement->execute();
         return $satement;

@@ -22,5 +22,9 @@
           return "Node name '" . $n . "' doesn't exist";
         }
 
+        public function noChildUnder($node) {
+          return "No child under '" . $node . "'";
+        }
+
     }
 ?>

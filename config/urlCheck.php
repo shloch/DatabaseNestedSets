@@ -5,9 +5,6 @@ function isURLValid($errorObject) {
   $node_id = $_GET['node_id'];
   $language = $_GET['language'];
   $search = $_GET['search'];
-  $page_num = ($_GET['page_num'] == null) ? 0 : $_GET['page_num']; //optional
-  $page_size = ($_GET['page_size'] == null) ? 100 : $_GET['page_size']; //optional
-
   $arr = array("isValid"=> True, "errorMsg" => "Success");
 
   if ($node_id == null || $language == null || $search == null) {
@@ -27,8 +24,6 @@ function isURLValid($errorObject) {
     $arr["errorMsg"] = $errorObject->invalidPageNum();
     return $arr;
   }
-
-  
 
   return $arr;
 
