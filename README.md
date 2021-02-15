@@ -5,6 +5,13 @@ More about the exercise here
 
 ## Visual sketch of data representation
 
+![alt text](https://github.com/shloch/DatabaseNestedSets/blob/main/images/sketch.jpeg)
+
+## Project Specs
+
+![alt text](https://github.com/shloch/DatabaseNestedSets/blob/main/images/requirements.jpeg)
+![alt text](https://github.com/shloch/DatabaseNestedSets/blob/main/images/constraints.jpeg)
+
 
 ## USAGE
 
@@ -93,7 +100,7 @@ The live demo is available here: _https://rawcdn.githack.com/shloch/custom-Grid-
 ## Screenshot 
 
 
-![alt text](https://github.com/shloch/custom-Grid-based-Framework/blob/master/assets/images/screenshot1.png)
+
 
 ![alt text](https://github.com/shloch/custom-Grid-based-Framework/blob/master/assets/images/screenshot2.png)
 
