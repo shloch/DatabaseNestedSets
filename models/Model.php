@@ -13,7 +13,7 @@ class Model {
     }
 
     //Get tree from specific node
-    public function getTreeFromNode($nodeID, $search, $language='english') {
+    public function getTreeFromNode($nodeID, $search, $language='english', $page_size = 100, $page_num = 0 ) {
         //create query
          $query = 'SELECT n.idNode, n.nodeName, t.level AS parentLevel FROM node_tree_names n 
                    INNER JOIN node_tree t ON t.idNode = n.idNode 
@@ -21,8 +21,11 @@ class Model {
                                                   INNER JOIN node_tree_names t ON t.idNode = parent.idNode 
                                                   WHERE (node.iLeft BETWEEN parent.iLeft AND parent.iRight) AND (parent.idNode = \''. $nodeID .'\') AND (t.language = \''.$language.'\') 
                                                   ORDER BY node.iLeft))';
+        
+            $query = $query . " LIMIT " . ( ( $page_num ) * $page_size+1 ) . ", $page_size ";
+        
         //prepare statements
-        //echo $query;
+        echo $query;
         $satement = $this->connection->prepare($query);
         $satement->execute();
         return $satement;

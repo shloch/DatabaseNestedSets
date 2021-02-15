@@ -51,4 +51,5 @@ The live demo is available here: _https://rawcdn.githack.com/shloch/custom-Grid-
 ## Acknowledgements
 - https://www.youtube.com/watch?v=RswtHsz4v-0
 - http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
+- https://code.tutsplus.com/tutorials/how-to-paginate-data-with-php--net-2928
 
