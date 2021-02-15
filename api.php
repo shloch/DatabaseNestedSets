@@ -41,7 +41,7 @@ if($urlValidity['isValid'] == false) {
     // check if any post
     if($num > 0) {
       //post array
-      $response = array();
+       $response = array();
       $response['data'] = array();
 
       while($row = $result->fetch(PDO::FETCH_ASSOC)) {
