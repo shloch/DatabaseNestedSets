@@ -6,7 +6,6 @@ class Model {
     private $tree = 'node_tree';
     private $tree_names  = 'node_tree_names';
 
-
     //constructor with DB
     public function __construct($db) {
         $this->connection = $db;
@@ -22,24 +21,37 @@ class Model {
                                                   WHERE (node.iLeft BETWEEN parent.iLeft AND parent.iRight) AND (parent.idNode = \''. $nodeID .'\') AND (t.language = \''.$language.'\') 
                                                   ORDER BY node.iLeft))';
         
-            $query = $query . " LIMIT " . ( ( $page_num ) * $page_size+1 ) . ", $page_size ";
+        $query = $query . " LIMIT " . ( ( $page_num ) * $page_size+1 ) . ", $page_size ";
         
         //prepare statements
-        echo $query;
         $satement = $this->connection->prepare($query);
         $satement->execute();
         return $satement;
     }
 
+
     public function checkIfNameExist($search) {
         //create query
-         $query = 'SELECT n.nodeName FROM node_tree_names n 
+        $query = 'SELECT n.nodeName FROM node_tree_names n 
                     WHERE (n.nodeName = \'' .$search. '\')';
 
         //prepare statements
         $satement = $this->connection->prepare($query);
         $satement->execute();
         return $satement;
+    }
+
+    //ensure that searched NODE NAME matches the NodeID passed in search
+    public function nodeID_searchString_match($nodeID, $search) {
+        $query = 'SELECT n.nodeName FROM node_tree_names n 
+                  WHERE (n.nodeName = \'' .$search. '\')
+                  AND (n.idNode = \'' .$nodeID. '\')';
+
+        //prepare statements
+        $satement = $this->connection->prepare($query);
+        $satement->execute();
+        $total = $satement->rowCount();
+        return $total;
     }
 
 }

@@ -26,5 +26,10 @@
           return "No child under '" . $node . "'";
         }
 
+
+        public function nodeID_nodeName_mismatch($id, $name) {
+          return "Mismatch between NodeID (" . $id . ") and Node Name (" . $name . ")";
+        }
+
     }
 ?>
