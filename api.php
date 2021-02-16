@@ -63,7 +63,7 @@ if($urlValidity['isValid'] == false) {
       } else {
         //no matching data
         echo json_encode(
-            array('error' => $erroObject->invalideNode() )
+            array('error' => $erroObject->generalError() )
         );
       }
     }

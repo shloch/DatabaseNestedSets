@@ -21,7 +21,7 @@ class Model {
                                                   WHERE (node.iLeft BETWEEN parent.iLeft AND parent.iRight) AND (parent.idNode = \''. $nodeID .'\') AND (t.language = \''.$language.'\') 
                                                   ORDER BY node.iLeft))';
         
-        $query = $query . " LIMIT " . ( ( $page_num ) * $page_size+1 ) . ", $page_size ";
+        $query = $query . " LIMIT " . ( ( $page_num ) * $page_size ) . ", $page_size ";
         
         //prepare statements
         $satement = $this->connection->prepare($query);

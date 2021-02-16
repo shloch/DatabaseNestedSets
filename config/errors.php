@@ -31,5 +31,9 @@
           return "Mismatch between NodeID (" . $id . ") and Node Name (" . $name . ")";
         }
 
+        public function generalError() {
+          return "No results matching search params";
+        }
+
     }
 ?>
