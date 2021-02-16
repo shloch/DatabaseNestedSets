@@ -31,7 +31,7 @@ The live demo is available here: _https://rawcdn.githack.com/shloch/custom-Grid-
 
 ## demo 
 
-This project is deployed on Heroku for testing and deployed [here](https://nested-sets.herokuapp.com/)
+This project is deployed on Heroku for testing and deployed [here](https://nested-sets.herokuapp.com/api.php/)
 
 ## Contributor
 

@@ -1,10 +1,10 @@
 <?php
     class Database {
         //DB params
-        private $host = '127.0.0.1';
-        private $db_name = 'nested_sets';
-        private $username = 'root';
-        private $password = 'root';
+        private $host = 'r6ze0q02l4me77k3.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
+        private $db_name = 'zhh9egv99fqz4tdr';
+        private $username = 'iwcr197sew9tozkz';
+        private $password = 'xa9h0q4mm3qtxovh';
         private $connection;
 
         // DB Connect
