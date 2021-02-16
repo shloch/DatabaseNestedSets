@@ -33,6 +33,8 @@ The live demo is available here: _https://rawcdn.githack.com/shloch/custom-Grid-
 
 This project is deployed on Heroku for testing and deployed [here](https://nested-sets.herokuapp.com/api.php/)
 
+Sample search string = https://nested-sets.herokuapp.com/api.php/?node_id=2&language=italian&search=helpdesk&page_size=210&page_num=0
+
 ## Contributor
 
 ### 👤 **SHEY Louis CHIA**
