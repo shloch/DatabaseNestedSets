@@ -35,16 +35,13 @@ This project is deployed on Heroku for testing and deployed [here](https://neste
 
 Sample search string = `https://nested-sets.herokuapp.com/api.php/?node_id=2&language=italian&search=helpdesk&page_size=210&page_num=0`
 
-<a href="{https://www.loom.com/share/afcc37bddd414dc8b027b6dca27fefba}" title="Link Title"><img src="{image-url}" alt="Alternate Text" /></a>
+- [VIDEO 1 - PROJECT PRESENTATION](https://www.loom.com/share/afcc37bddd414dc8b027b6dca27fefba)
+- [VIDEO 2 - PROJECT PRESENTATION](https://www.loom.com/share/b2bc3f4fd9334fa1a470e3fc51310b30)
 
 
-<a href="{https://www.loom.com/share/b2bc3f4fd9334fa1a470e3fc51310b30}" title="Link Title"><img src="{image-url}" alt="Alternate Text" /></a>
+## Code walk-through video
 
-
-
-## Code walk-through
-<a href="{https://www.loom.com/share/a31fa194b9784fbbbd3e99d49f566fd6}" title="Link Title"><img src="{image-url}" alt="Alternate Text" /></a>
-
+- [VIDEO 3 - HOW THE CODE WORKS](https://www.loom.com/share/a31fa194b9784fbbbd3e99d49f566fd6)
 
 ## Contributor
 
