@@ -26,10 +26,9 @@ More about the exercise [here](https://github.com/shloch/DatabaseNestedSets/blob
 
 ## Testing the app
 
-The live demo is available here: _https://rawcdn.githack.com/shloch/custom-Grid-based-Framework/3b4bc04f48eabc1b80066c1eb94c83c2e293246b/index.html_
+This app is deployed and availaible demo is available [here](https://nested-sets.herokuapp.com/api.php/)
 
-
-## Deployed link and Demo videos 
+## Demo videos 
 
 This project is deployed on Heroku for testing and deployed [here](https://nested-sets.herokuapp.com/api.php/)
 
@@ -42,6 +41,16 @@ Sample search string = `https://nested-sets.herokuapp.com/api.php/?node_id=2&lan
 ## Code walk-through video
 
 - [VIDEO 3 - HOW THE CODE WORKS](https://www.loom.com/share/a31fa194b9784fbbbd3e99d49f566fd6)
+
+## Tools used
+
+- phpMyAdmin (DBMS tool)
+- MAMP (web server)
+- Postman (testing API calls)
+- Curl (command line tool to test API calls)
+- MySQL WorkBench (DBMS tool)
+- Bash terminal (for typing commands)
+- Heroku (deployment)
 
 ## Contributor
 
