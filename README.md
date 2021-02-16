@@ -29,16 +29,11 @@ More about the exercise [here](https://github.com/shloch/DatabaseNestedSets/blob
 The live demo is available here: _https://rawcdn.githack.com/shloch/custom-Grid-based-Framework/3b4bc04f48eabc1b80066c1eb94c83c2e293246b/index.html_
 
 
-## Screenshot 
+## demo 
 
+This project is deployed on Heroku for testing and deployed [here](https://nested-sets.herokuapp.com/)
 
-
-
-![alt text](https://github.com/shloch/custom-Grid-based-Framework/blob/master/assets/images/screenshot2.png)
-
-![alt text](https://github.com/shloch/custom-Grid-based-Framework/blob/master/assets/images/design.gif)
-
-## Contributors
+## Contributor
 
 ### 👤 **SHEY Louis CHIA**
 
