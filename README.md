@@ -26,11 +26,10 @@ More about the exercise [here](https://github.com/shloch/DatabaseNestedSets/blob
 
 ## Testing the app
 
-This app is deployed and availaible demo is available [here](https://nested-sets.herokuapp.com/api.php/)
+This app is deployed and availaible online [here](https://nested-sets.herokuapp.com/api.php/)
 
 ## Demo videos 
 
-This project is deployed on Heroku for testing and deployed [here](https://nested-sets.herokuapp.com/api.php/)
 
 Sample search string = `https://nested-sets.herokuapp.com/api.php/?node_id=2&language=italian&search=helpdesk&page_size=210&page_num=0`
 
