@@ -50,6 +50,7 @@ Sample search string = `https://nested-sets.herokuapp.com/api.php/?node_id=2&lan
 - MySQL WorkBench (DBMS tool)
 - Bash terminal (for typing commands)
 - Heroku (deployment)
+- VSCode (coding tool)
 
 ## Contributor
 
