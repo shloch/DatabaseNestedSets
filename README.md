@@ -28,6 +28,8 @@ More about the exercise [here](https://github.com/shloch/DatabaseNestedSets/blob
 
 This app is deployed and availaible online [here](https://nested-sets.herokuapp.com/api.php/)
 
+![alt text](https://github.com/shloch/DatabaseNestedSets/blob/main/images/url.gif)
+
 ## Demo videos 
 
 
